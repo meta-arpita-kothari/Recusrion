@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /*
- * Design a class ìSearchî to search for an element in an array 
+ * Design a class ‚ÄúSearch‚Äù to search for an element in an array 
  * using recursion following strategy 
  * - Linear Search
  * - Binary Search
@@ -172,11 +172,9 @@ public class Search {
 				System.out.println("Enter element to be searched: ");
 				// num2 = PositiveIntegerException.setInput();
 				ele = input.nextInt();
-				int[] sortArr = arr;
-				Arrays.sort(sortArr);
 				
 				// this function will sort the array inside , so pass the original array
-				index = Search.binarySearch(sortArr, arrLen - 1, ele);
+				index = Search.binarySearch(arr, arrLen - 1, ele);
 
 				if (index == -1)
 					System.out.println("Element not found in the array");
